@@ -1,0 +1,37 @@
+
+.annotated_source_code {
+  display: none;
+  border-collapse:collapse;
+}
+
+/* Within the annotated source section the docstring should have a much smaller
+   right margin so that the description text will be closer to the center line */
+.annotated_source_code * div.docstring { margin-right: 20px; }
+
+/* For the comment column set a minimum/max width and change the fonts to look
+   like the nice font and size used by docco comments. Docco examples I have 
+   seen use 450px, I'm going a little smaller here to allow more to appear on
+   screen. */
+.annotated_source_code * td.comment {
+  width: 400px; min-width: 400px; 
+  padding: 10px 0px 0px 10px;
+  vertical-align: text-top;
+  font-family: Palatino Linotype; font-size: 15px;
+}
+
+/* Give the line numbers a nice gutter that will site between the comments and
+   the code. */
+.annotated_source_code * td.line-numbers {
+  background-color: #DDD;
+  vertical-align: text-top;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.annotated_source_code * td.code {
+  background-color: #F5F5FF; 
+  padding-left: 10px; 
+  padding-right: 10px;
+  width: 100%;
+  vertical-align: text-top;
+}

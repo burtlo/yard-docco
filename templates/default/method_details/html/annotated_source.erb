@@ -1,0 +1,21 @@
+<table class="annotated_source_code">
+  <tr>
+    <td colspan="3" style="padding-left: 10px;">
+      <pre class="code"><span class="info file"># File '<%= h object.file %>'<% if object.line %>, line <%= object.line %><% end %></span></pre>
+    </td>
+  </tr>
+  <% object.annotated_source.each do |source| %>
+    <tr>
+      <td class="comment">
+        <span><%= docstring_comment Array(source.first).join("\n") %>  
+      </td>
+      <td class="line-numbers">
+        <pre class="lines" style="padding-right: 0px;"><%= h show_annotated_lines(source) %></pre>
+      </td>
+      <td class="code">
+        <pre class="code"><span class="info file"><%= html_syntax_highlight Array(source.last).join("\n") %></pre>
+      </td>
+    </tr>
+  <% end %>
+
+</table>
