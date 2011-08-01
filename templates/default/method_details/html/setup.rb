@@ -104,7 +104,7 @@ def annotate_source(source)
   # If we have finished parsing lines and we still have code within a home, which
   # is likely if the the source code ends with an end. We want to create a new pair
   if current_code
-    annotated << [ finished_comment.to_s, current_code ]
+    annotated << [ finished_comment, current_code ]
     current_code = nil
   end
   

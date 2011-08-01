@@ -1,20 +1,38 @@
+# An example pirate ship.
 class Example
   
-  def to_s
+  # @todo Yar! There be comments ahead, within these method. And if you are wise 
+  #   you will view the annotated source.
+  def a_word_of_warning
     
-    # Comments at the start of will be collected with the comments below and
-    # all notes and todos will be above even this.
-    # @note that I want to tell you something
-    # @todo this is a todo
-    # This sentence was below the @note and the @todo but will appear with the
-    # other sentences below them.
+    # Comments are found and collected and matched to the code that immediately
+    # follows the comments. You will be able to see these comments to the left
+    # of the source code that follows
     self.to_s.capitalize
+  end
+
+  # You must have stolen a pirate's rum to have been given this fate.
+  def walk_the_plank
     
-    # Some comments at the end that should get included as well
+    # @note A note should be parsed and appear in the comments. Which will make
+    #   it easier to find code that needs to be addressed.
+    puts "Yo Ho, Yo Ho!"
+    
+    # I should have listened to the {#a_word_of_warning} (which I can link to
+    # and visit immediately from within the method comments).  Too late.
+    puts "Walk the Plank!"
+
+    # @todo Even todo tags will appear as well. This todo is telling me I should
+    #   code up the plank to walk.
+    # 
+    # No code follows save for the end of the method, but the comment should still 
+    # appear paired with a block of code.
     
   end
   
   #
+  # What? Even pirate ships need to export to XML.
+  # 
   # Create an xml representation of the specified class based on defined
   # HappyMapper elements and attributes. The method is defined in a way
   # that it can be called recursively by classes that are also HappyMapper

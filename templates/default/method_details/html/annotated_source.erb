@@ -7,7 +7,7 @@
   <% object.annotated_source.each do |source| %>
     <tr>
       <td class="comment">
-        <span><%= docstring_comment Array(source.first).join("\n") %>  
+        <span><%= docstring_comment source.first %>  
       </td>
       <td class="line-numbers">
         <pre class="lines" style="padding-right: 0px;"><%= h show_annotated_lines(source) %></pre>
