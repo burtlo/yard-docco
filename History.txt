@@ -1,3 +1,7 @@
+=== 1.0.1 / 2011-08-01
+
+- FIX an issue with some inline comments not appearing
+
 === 1.0.0 / 2011-07-31
 
 * Initial Release
