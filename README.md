@@ -17,7 +17,7 @@ Examples
 I have created a trivial, example project to help provide a quick 
 visualization of the resulting documentation.
 
-The implemented example has been deployed at [http://recursivegames.com/yard-docco](http://recursivegames.com/yard-docco).
+The implemented example has been deployed at [http://recursivegames.com/yard-docco/Example.html](http://recursivegames.com/yard-docco/Example.html).
 
 **1. Comments made within methods appear alongside the code they are attempting to describe.
 
