@@ -28,7 +28,7 @@ Installation
 
 YARD-Docco requires the following gems installed:
 
-    YARD 0.7.0 - http://yardoc.org
+    YARD 0.8.3 - http://yardoc.org
 
 To install `yard-docco` use the following command:
 
