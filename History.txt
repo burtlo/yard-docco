@@ -1,3 +1,7 @@
+=== 1.0.2 / 2013-01-02
+
+- Compat with YARD 0.8.3
+
 === 1.0.1 / 2011-08-01
 
 - FIX an issue with some inline comments not appearing
