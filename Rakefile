@@ -8,6 +8,6 @@ task :clean do
 end
 
 task :gendoc => :clean do
-  `yardoc -e ./lib/yard-docco.rb 'example/**/*' --debug`
+  puts `yardoc -e ./lib/yard-docco.rb 'example/**/*' --debug`
   #`open doc/index.html`
 end
